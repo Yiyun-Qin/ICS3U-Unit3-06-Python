@@ -1,7 +1,7 @@
 GET number_guessed
 TRY
     number_integer = int(number_guessed)
-    IF (number_guessed = answer_random) THEN
+    IF (number_integer = answer_random) THEN
         SHOW "Your guess is right!"
     ELSE
     SHOW "Your answer is wrong! The correct answer is answer_random"
