@@ -1,6 +1,13 @@
 GET number_guessed
-IF (number_guessed = answer_random) THEN
-    SHOW "Your guess is right!"
-ELSE
+TRY
+    number_integer = int(number_guessed)
+    IF (number_guessed = answer_random) THEN
+        SHOW "Your guess is right!"
+    ELSE
     SHOW "Your answer is wrong! The correct answer is answer_random"
-ENDIF
+    ENDIF
+EXCEPT (invalid argument)
+    SHOW "number_guessed is not a number."
+FINALLY
+    SHOW "Done."
+ENDTRY
