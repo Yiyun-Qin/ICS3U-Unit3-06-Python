@@ -6,8 +6,8 @@ TRY
     ELSE
     SHOW "Your answer is wrong! The correct answer is answer_random"
     ENDIF
-EXCEPT (invalid argument)
-    SHOW "number_guessed is not a number."
+EXCEPT Exception
+    SHOW "number_guessed is not an integer!"
 FINALLY
     SHOW "Done."
 ENDTRY
