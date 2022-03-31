@@ -1,0 +1,6 @@
+GET number_guessed
+IF (number_guessed = answer_random) THEN
+    SHOW "Your guess is right!"
+ELSE
+    SHOW "Your answer is wrong! The correct answer is answer_random"
+ENDIF
