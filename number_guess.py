@@ -23,7 +23,7 @@ def main():
             print("Your guess is right!")
         else:
             print("Your guess is wrong! The answer is {0}.".format(answer_random))
-    except ValueError:
+    except Exception:
         print("{} is not an integer!".format(number_guess))
     finally:
         print("\nDone.")
