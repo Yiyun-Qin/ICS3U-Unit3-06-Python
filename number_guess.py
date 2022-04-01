@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Created by Yiyun Qin
-# Created on March 2022
+# Created in March 2022
 # This is the math program, comparing the guessed number and answer
 
 import random
