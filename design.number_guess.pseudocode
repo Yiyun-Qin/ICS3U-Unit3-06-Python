@@ -5,8 +5,7 @@ TRY
     IF (number_integer = answer_random) THEN
         SHOW "Your guess is right!"
     ELSE
-    SHOW "Your answer is wrong!
-         The correct answer is answer_random"
+        SHOW "Your answer is wrong! The correct answer is answer_random"
     ENDIF
 EXCEPT Exception
     SHOW "number_guessed is not an integer!"
